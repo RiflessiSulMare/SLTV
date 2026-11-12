@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SLTV - Canali TV</title>
+<style>
+*{box-sizing:border-box}
+html,body{width:100%;height:100%;margin:0}
+body{background:#050608;color:#f4f6f8;font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+.wrap{width:100%;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3vh 5vw}
+.header{text-align:center;margin-bottom:3.2vh}
+.title{font-size:clamp(30px,4.2vw,58px);font-weight:800;letter-spacing:4px;margin:0;text-shadow:0 0 16px rgba(80,170,255,.22)}
+.title .tv{font-size:.72em;vertical-align:middle;margin-right:10px}
+.subtitle{font-size:clamp(11px,1.15vw,16px);letter-spacing:5px;color:#a9c8e8;margin-top:9px}
+.line{width:min(460px,65vw);height:1px;margin:12px auto 0;background:linear-gradient(90deg,transparent,#2d9cff,transparent);box-shadow:0 0 8px #1766a0}
+.grid{width:min(1040px,88vw);display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.channel{height:clamp(135px,17vh,205px);border:1px solid #536b80;border-radius:14px;background:linear-gradient(145deg,#292e33,#0d1013);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 8px 22px rgba(0,0,0,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:#fff;transition:.15s;position:relative;overflow:hidden}
+.channel:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 15%,rgba(55,155,255,.12),transparent 48%);pointer-events:none}
+.channel:hover{transform:translateY(-2px);border-color:#76bfff;box-shadow:0 0 18px rgba(60,160,255,.22),inset 0 1px 0 rgba(255,255,255,.16)}
+.logo{height:58px;min-width:115px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.logo span{display:inline-block}
+.rai1{background:#1558c7;padding:6px 13px;border-radius:4px}.rai1 b{background:#fff;color:#1558c7;padding:2px 9px;margin-left:3px}.rai2{background:#e21a22;padding:6px 13px;border-radius:4px}.rai2 b{background:#fff;color:#e21a22;padding:2px 9px;margin-left:3px}.rai3{background:#079b52;padding:6px 13px;border-radius:4px}.rai3 b{background:#fff;color:#079b52;padding:2px 9px;margin-left:3px}
+.rete4{width:62px;min-width:62px;height:62px;border-radius:50%;background:#f36a17;font-size:40px}.canale5{font-size:58px;line-height:1}.canale5:before{content:"✿";font-size:20px;position:absolute;left:14px;top:1px}.italia1{font-size:52px;color:#16bde9;letter-spacing:-7px}
+.name{font-size:clamp(15px,1.45vw,22px);font-weight:800;letter-spacing:2px;position:relative}
+.home{margin-top:3vh;padding:13px 34px;border:1px solid #62788d;border-radius:9px;background:linear-gradient(#292e33,#101316);color:#fff;text-decoration:none;font-weight:700;letter-spacing:2px;box-shadow:0 6px 16px rgba(0,0,0,.4)}
+.home:hover{border-color:#76bfff}
+@media(max-width:800px){.wrap{padding:18px}.grid{gap:10px}.channel{height:120px}.logo{transform:scale(.8);margin-bottom:2px}.name{font-size:14px}.subtitle{letter-spacing:3px}.home{margin-top:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1 class="title"><span class="tv">📺</span> CANALI TV</h1>
+    <div class="subtitle">GUARDA LA TV IN DIRETTA</div>
+    <div class="line"></div>
+  </header>
+  <main class="grid">
+    <a class="channel" href="https://www.raiplay.it/dirette/rai1"><div class="logo rai1"><span>Rai</span><b>1</b></div><div class="name">RAI 1</div></a>
+    <a class="channel" href="https://www.raiplay.it/dirette/rai2"><div class="logo rai2"><span>Rai</span><b>2</b></div><div class="name">RAI 2</div></a>
+    <a class="channel" href="https://www.raiplay.it/dirette/rai3"><div class="logo rai3"><span>Rai</span><b>3</b></div><div class="name">RAI 3</div></a>
+    <a class="channel" href="https://mediasetinfinity.mediaset.it/diretta/rete4_cR4"><div class="logo rete4">4</div><div class="name">RETE 4</div></a>
+    <a class="channel" href="https://mediasetinfinity.mediaset.it/diretta/canale5_cC5"><div class="logo canale5">5</div><div class="name">CANALE 5</div></a>
+    <a class="channel" href="https://mediasetinfinity.mediaset.it/diretta/italia1_cI1"><div class="logo italia1">◁❯</div><div class="name">ITALIA 1</div></a>
+  </main>
+  <a class="home" href="index.html">⌂ &nbsp; HOME</a>
+</div>
+</body>
+</html>

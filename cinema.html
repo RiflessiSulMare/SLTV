@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SLTV - Cinema</title>
+<style>
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0}
+body{background:#04040b;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 38%,rgba(74,45,170,.22),transparent 43%),radial-gradient(circle at 8% 55%,rgba(30,40,100,.14),transparent 32%),radial-gradient(circle at 92% 55%,rgba(91,42,180,.18),transparent 34%);pointer-events:none}
+.wrap{width:100%;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3vh 5vw;position:relative}
+.header{text-align:center;margin-bottom:3.5vh}.title{font-size:clamp(32px,4.4vw,62px);font-weight:800;letter-spacing:5px;margin:0;text-shadow:0 0 18px rgba(170,120,255,.25)}
+.title .clap{font-size:.7em;vertical-align:middle;margin-right:12px}.subtitle{font-size:clamp(11px,1.2vw,17px);letter-spacing:5px;color:#a9c8f5;margin-top:10px}.line{width:min(560px,68vw);height:1px;margin:13px auto 0;background:linear-gradient(90deg,transparent,#7554e8,transparent);box-shadow:0 0 10px #5431aa}
+.grid{width:min(1080px,88vw);display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{min-height:clamp(170px,21vh,235px);border:1px solid #5d66a0;border-radius:16px;background:linear-gradient(145deg,rgba(29,38,49,.96),rgba(7,10,17,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 30px rgba(0,0,0,.5),0 0 18px rgba(75,55,180,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:#fff;transition:.15s;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 15%,rgba(100,110,255,.12),transparent 55%);pointer-events:none}.card:hover{transform:translateY(-2px);border-color:#8f8cff;box-shadow:0 0 24px rgba(105,75,235,.25),inset 0 1px 0 rgba(255,255,255,.15)}
+.logo{height:70px;display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:12px}.logo.rai{background:#10aeea;padding:7px 13px;font-size:34px;font-weight:800;letter-spacing:-2px}.logo.rai span:last-child{background:#fff;color:#1689bd;padding:1px 8px;margin-left:4px}.logo.mediaset{font-size:33px;font-weight:800;font-style:italic;letter-spacing:-2px}.logo.mediaset small{display:block;color:#aaa;font-size:13px;letter-spacing:1px;text-align:left;margin-bottom:0}.logo.mediaset b{background:linear-gradient(90deg,#b000ff,#00d5ff);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:43px}.logo.pluto{width:78px;height:78px;border-radius:50%;background:#ffe600;color:#111;font-size:27px;font-weight:800;letter-spacing:-2px}.logo.pluto span{font-size:16px;margin-left:2px}.logo.cinema{background:#1356d5;color:#fff;padding:8px 12px;font-size:32px;font-weight:700;letter-spacing:-2px}.logo.cinema span{margin-left:6px}.name{font-size:clamp(17px,1.55vw,24px);font-weight:800;letter-spacing:2px;position:relative}.desc{font-size:clamp(10px,1vw,14px);color:#9fb7ef;letter-spacing:2px;margin-top:9px;position:relative}
+.home{margin-top:3vh;padding:15px 40px;border:1px solid #66719d;border-radius:10px;background:linear-gradient(#222936,#0c1018);color:#fff;text-decoration:none;font-size:clamp(14px,1.25vw,18px);font-weight:700;letter-spacing:2px;box-shadow:0 7px 18px rgba(0,0,0,.45)}.home:hover{border-color:#a99cff;box-shadow:0 0 18px rgba(110,80,240,.25)}
+@media(max-width:800px){.wrap{padding:18px}.grid{gap:10px}.card{min-height:145px}.logo{transform:scale(.78);margin-bottom:0}.name{font-size:14px}.desc{font-size:9px}.subtitle{letter-spacing:3px}.home{margin-top:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="header"><h1 class="title"><span class="clap">🎬</span>CINEMA</h1><div class="subtitle">FILM E SERIE ON DEMAND</div><div class="line"></div></header>
+<main class="grid">
+<a class="card" href="https://www.raiplay.it/film"><div class="logo rai">Rai<span>Play</span></div><div class="name">RAI PLAY</div><div class="desc">FILM · SERIE TV · DOCUMENTARI</div></a>
+<a class="card" href="https://mediasetinfinity.mediaset.it/cinema"><div class="logo mediaset"><div><small>MEDIASET</small><b>infinity</b></div></div><div class="name">MEDIASET INFINITY</div><div class="desc">FILM · SERIE TV · SHOW</div></a>
+<a class="card" href="https://pluto.tv/it/movies"><div class="logo pluto">pluto<span>tv</span></div><div class="name">PLUTO TV</div><div class="desc">CINEMA GRATIS · CANALI LIVE</div></a>
+<a class="card" href="https://www.arte.tv/it/videos/cinema/"><div class="logo cinema">Rai<span>Cinema</span></div><div class="name">ARTE CINEMA</div><div class="desc">GRANDI FILM · CINEMA D’AUTORE</div></a>
+</main>
+<a class="home" href="index.html">⌂ &nbsp; HOME</a>
+</div>
+</body>
+</html>
